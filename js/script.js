@@ -31,7 +31,7 @@ let songs = [
   {
     songName: "Bad Guy - Billie Eilish",
     filePath: "./song/Bad guy.mp3",
-    coverPath: "./covers/Bad guy.jpg",
+    coverPath: "./covers/bad guy.jpg",
   },
   {
     songName: "Viah Di Khabar - KAKA",
