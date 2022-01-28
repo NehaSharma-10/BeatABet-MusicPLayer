@@ -273,4 +273,8 @@ li {
     #progressBarId {
         margin-top: 10px;
     }
+    .bottom {
+        position: sticky;
+        bottom: 0;
+    }
 }
