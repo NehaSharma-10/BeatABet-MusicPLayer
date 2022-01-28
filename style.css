@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+    width: 100%;
+    height: auto;
+}
+
+.nav-class {
+    width: 100vw;
+    /* border-bottom: 1px solid green; */
+    background-color: black;
+    height: 65px;
+    color: white;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.nav-logo-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.nav-logo-list p {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    /* letter-spacing: 0.1 px; */
+}
+
+nav ul {
+    height: 65px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: green;
+    font-size: 20px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+li {
+    list-style: none;
+    margin-right: 30px;
+    margin-left: 20px;
+    /* margin-top: 5px; */
+}
+
+.img {
+    margin-right: 10px;
+    /* width: 60px; */
+    height: 60px;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    padding-top: 40px;
+    padding-left: 30px;
+    background-image: url('/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    min-height: 74vh;
+    color: green;
+}
+
+.top-para-con {
+    width: 200px;
+    color: black;
+    font-size: 25px;
+    margin-left: 500px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.container p {
+    font-size: 15px;
+}
+
+.song-items {
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 35vw;
+    border: 1px solid green;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-items span {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.song-items button {
+    color: green;
+    border: none;
+    background-color: inherit;
+}
+
+.song-items button i {
+    margin-left: 10px;
+}
+
+.song-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.fa-play-circle,
+.fa-pause-circle {
+    cursor: pointer;
+    color: green;
+    font-size: 20px;
+}
+
+.bottom {
+    width: 100vw;
+    /* border-top: 1px solid green; */
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+}
+
+.music-icons button {
+    border: none;
+    background-color: black;
+}
+
+.top-song-icon-gif {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-name-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+}
+
+#song-name-bottom {
+    padding-top: 10px;
+    font-size: 17px;
+    color: green;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.fas {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 28px;
+    color: green;
+}
+
+#gif {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+#progressBarId {
+    background: linear-gradient(to right, white 0%, white 50%, white 50%, white 100%);
+    border: solid 1px green;
+    border-radius: 8px;
+    height: 7px;
+    width: 80vw;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+}
+
+#progressBarId::-webkit-slider-thumb {
+    border: 1px solid green;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background: green;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .nav-class {
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .nav-class ul {
+        height: 50px;
+    }
+    .nav-logo-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img {
+        width: 40px;
+        height: 35px;
+    }
+    .container {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .song-items {
+        width: 90vw;
+    }
+    .song-items span {
+        font-size: 14px;
+    }
+    .bottom {
+        padding: 15px;
+        height: 70px;
+    }
+    .fas {
+        font-size: 20px;
+    }
+    .top-song-icon-gif {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .song-name-gif {
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .music-icons {
+        position: absolute;
+        right: 20px;
+    }
+    #gif {
+        width: 35px;
+        height: 35px;
+    }
+    #song-name-bottom {
+        padding: 0;
+        font-size: 15px;
+    }
+    #progressBarId {
+        margin-top: 10px;
+    }
+}
