@@ -59,14 +59,16 @@ li {
 .container {
     width: 100vw;
     height: auto;
-    padding-top: 40px;
-    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     background-image: url('/images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
     min-height: 74vh;
     color: green;
+    padding: 20px;
 }
 
 .top-para-con {
@@ -88,7 +90,7 @@ li {
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    width: 35vw;
+    width: 45vw;
     border: 1px solid green;
     border-radius: 35px;
     display: flex;
@@ -204,15 +206,25 @@ li {
 }
 
 @media screen and (max-width:800px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: green;
+        width: 100vw;
+        height: 100vh;
+    }
     .nav-class {
         width: 100vw;
-        height: 60px;
+        height: 80px;
         display: flex;
         justify-content: left;
         align-items: center;
     }
     .nav-class ul {
-        height: 50px;
+        height: 70px;
     }
     .nav-logo-list {
         display: flex;
@@ -220,14 +232,13 @@ li {
         align-items: center;
     }
     .img {
-        width: 40px;
-        height: 35px;
+        width: 45px;
+        height: 40px;
     }
     .container {
-        width: 100vw;
+        height: 78vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     .song-items {
@@ -237,11 +248,13 @@ li {
         font-size: 14px;
     }
     .bottom {
-        padding: 15px;
-        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
     }
     .fas {
-        font-size: 20px;
+        font-size: 25px;
     }
     .top-song-icon-gif {
         display: flex;
@@ -257,7 +270,7 @@ li {
     }
     .music-icons {
         position: absolute;
-        right: 20px;
+        right: 40px;
     }
     #gif {
         width: 35px;
@@ -268,10 +281,6 @@ li {
         font-size: 15px;
     }
     #progressBarId {
-        margin-top: 10px;
-    }
-    .bottom {
-        position: sticky;
-        bottom: 0;
+        margin-top: 15px;
     }
 }
