@@ -224,10 +224,7 @@ li {
         height: 35px;
     }
     .container {
-        padding-bottom: 10px;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
